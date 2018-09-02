@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.menu_box{
+	width: 600px;
+	border: double 7px black;
+}
+
+.pvp{
+	margin: auto;
+}
+
+.ret{
+	margin: 20px auto;
+}
+
+.menu_title{
+	border-bottom: solid 2px;
+	text-align: center;
+	background-color: #dff;
+}
+
+ul{
+	list-style: none;
+	text-align: center;
+	margin-left: -2em;
+	line-height: 2em;
+}
