@@ -45,6 +45,10 @@
 	margin-top: 20px;
 }
 
+.mt15{
+	margin-top: 15px;
+}
+
 .mL5{
 	margin-left: 5px;
 }
@@ -62,6 +66,11 @@ textarea{
 	resize: none;
 }
 
+.text{
+	font-size: 20px;
+	width: 93%;
+}
+
 .circle{
 	background-image: url(../img/circle.png);
 	background-size: contain;
@@ -77,10 +86,6 @@ textarea{
 .w180_block{
 	display: inline-block;
 	width: 180px;
-}
-
-.ini_b{
-    display: inline-block;
 }
 
 @media print{
