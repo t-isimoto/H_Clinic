@@ -19,7 +19,7 @@
     </p>
     <div id="main_box">
         <div class="name_area subject mt20">
-            <div class="href_block border_under fR">氏名&nbsp;<?php echo $name; ?>&nbsp;様</div>
+            <div class="half_block border_under fR">氏名&nbsp;<?php echo $name; ?>&nbsp;様</div>
             <div class="fC"></div>
         </div>
         

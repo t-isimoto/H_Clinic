@@ -23,7 +23,7 @@
     <div id="main_box">
         <form name="form1" method="post" action="layout.php">
             <div class="name_area subject mt20">
-                <div class="href_block border_under">氏名&nbsp;<input type="text" size="20" name="name" value="<?php echo $name; ?>" />&nbsp;様</div>
+                <div class="half_block border_under">氏名&nbsp;<input type="text" size="20" name="name" value="<?php echo $name; ?>" />&nbsp;様</div>
                 <div class="border_under">
                     推薦有効期限
                     <input type="text" size="4" name="year" value="<?php echo $year; ?>">年

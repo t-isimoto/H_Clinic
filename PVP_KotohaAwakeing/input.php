@@ -20,7 +20,7 @@
     <div id="main_box">
         <form name="form1" method="post" action="layout.php">
             <div class="name_area subject mt20">
-                <div class="href_block border_under fR">氏名&nbsp;<input type="text" size="20" name="name" value="<?php echo $name; ?>" />&nbsp;様</div>
+                <div class="half_block border_under fR">氏名&nbsp;<input type="text" size="20" name="name" value="<?php echo $name; ?>" />&nbsp;様</div>
                 <div class="fC"></div>
             </div>
             

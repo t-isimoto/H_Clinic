@@ -11,8 +11,6 @@
     $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : "";
     $date = date("Y / m / d");
     
-    $subject =  isset($_POST['subject']) ? htmlspecialchars($_POST['subject']) : "";
-    
     $kotoha1  = isset($_POST['kotoha_reading1']) ? htmlspecialchars($_POST['kotoha_reading1']) : "";
     $kotoha2  = isset($_POST['kotoha_reading2']) ? htmlspecialchars($_POST['kotoha_reading2']) : "";
     $kotoha3  = isset($_POST['kotoha_reading3']) ? htmlspecialchars($_POST['kotoha_reading3']) : "";

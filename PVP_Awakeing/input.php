@@ -31,7 +31,7 @@
             
             <div class="med_area">
                 <div class="subject_area">
-                    <div class="fL">Section　8c　G0　　</div>
+                    <div class="fL">Section　6d　G5+7　</div>
                 </div>
                 <div class="fL">、</div>
                 <div class="subject_area">
@@ -53,7 +53,7 @@ EOT;
             <div class="fC"></div>
             <div class="med_area">
                 <div class="subject_area">
-                    <div class="fL">Section　6d　G5+7　</div>
+                    <div class="fL">Section　6b　G5　　</div>
                 </div>
                 <div class="fL">、</div>
                 <div class="subject_area">
@@ -75,7 +75,7 @@ EOT;
             <div class="fC"></div>
             <div class="med_area">
                 <div class="subject_area">
-                    <div class="fL">Section　6b　G5　　</div>
+                    <div class="fL">Section　8c　G0　　</div>
                 </div>
                 <div class="fL">、</div>
                 <div class="subject_area">
@@ -117,7 +117,7 @@ EOT;
                 </div>
                 <div class="fL">、</div>
                 <div class="subject_area">
-                    8b
+                    8b7a7b
                 </div>
             </div>
             <div class="fC"></div>

@@ -43,3 +43,11 @@
 .caution_title{
 	margin-left: -1em;
 }
+
+table{
+	border-collapse: collapse;
+}
+
+td{
+	text-align: center;
+}

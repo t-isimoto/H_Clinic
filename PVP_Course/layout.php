@@ -17,126 +17,95 @@
 <body>
 <div id="contents">
     <p id="top_title">
-        PVP Course
+        PVP Awakeing
     </p>
     <p id="sub_title">
         Treatment Form
     </p>
     <div id="main_box">
         <div class="name_area">
-            <span class="nameArea"><span class="nameTitle">Name</span><?php echo $name; ?></span>
-            <span class="date">
-                <?php echo $date; ?>
-            </span>
-            <!-- <div class="fC">
-        </div> -->
+            <div class="fL">Name　<?php echo $name; ?></div>
+            <div style="float:right; margin-right:20px;"><?php echo $date; ?></div>
+            <div class="fC"></div>
         </div>
+        
         <div class="med_area">
-            <div class="phaseArea">
-                <span class="phaseTitle">Phase2</span>Initializing
+            <div>
+                <div>Phase2　Initializing</div>
             </div>
             <div class="section_area">
-                <span class="subject_area">
-                    <span class="section">
-                        <span class="secTitle">Section&nbsp;
-                        </span>
-                        <span class="secNum">
-                            <?php echo $section[$num]; ?>
-                        </span>
-                    </span>
-                </span>
-                <span class="dot">
-                    、
-                </span>
-                <span class="data_area">
-                    <span class="gNum">G
-                        <?php echo $g[$num]; ?>
-                    </span>
-                    <span class="eachTime">
-                        <?php echo $teach[$num]; ?>
-                    </span>
-                    times each
-                    <span class="vs">
-                    	<?php echo $s[$num]; ?>S&nbsp;&nbsp;<?php echo $vs[$num]; ?>VS&nbsp;
-                    </span>
+                <div class="subject_area">
+                    <div class="fL">Section&nbsp;
+                        <?php echo $section[$num]; ?>
+                    </div>
+                </div>
+                <div class="fL">、</div>
+                <div class="subject_area">
+                    G
+                    <?php echo $g[$num]; ?>
+                    &nbsp;&nbsp;
+                    <?php echo $teach[$num]; ?>
+                    times each　
+                    <?php echo $s[$num]; ?>S&nbsp;<?php echo $vs[$num]; ?>VS&nbsp;
 <?php $num += 1; ?>
+                </div>
             </div>
         </div>
         
-        <!-- <div class="fC"></div>  -->
+        <div class="fC"></div>
         <div class="med_area">
-            <div class="phaseArea">
-                <span class="phaseTitle">Phase3</span>Reconstructing
+            <div>
+                <div>Phase3　Reconstructing</div>
             </div>
             <div class="section_area">
-                <span class="subject_area">
-                    <span class="section">
-                        <span class="secTitle">
-                            Section&nbsp;
-                        </span>
-                        <span class="secNum">
-                            <?php echo $section[$num]; ?>
-                        </span>
-                    </span>
-                </span>
-                <span class="dot">、</span>
-                <span class="data_area">
-                    <span class="gNum">
-                        G
-                          <?php echo $g[$num]; ?>
-                    </span>
-                    <span class="eachTime">
-                        <?php echo $teach[$num]; ?>
-                    </span>
-                    times each
-                    <span class="vs">
-                        <?php echo $s[$num]; ?>S&nbsp;&nbsp;<?php echo $vs[$num]; ?>VS&nbsp;
-                    </span>
-                    <?php $num += 1; ?>
-                </span>
+                <div class="subject_area">
+                    <div class="fL">Section&nbsp;
+                        <?php echo $section[$num]; ?>
+                    </div>
+                </div>
+                <div class="fL">、</div>
+                <div class="subject_area">
+                    G
+                    <?php echo $g[$num]; ?>
+                    &nbsp;&nbsp;
+                    <?php echo $teach[$num]; ?>
+                    times each　
+                    <?php echo $s[$num]; ?>S&nbsp;<?php echo $vs[$num]; ?>VS&nbsp;
+<?php $num += 1; ?>
+                </div>
             </div>
         </div>
         
-        <!-- <div class="fC"></div> -->
+        <div class="fC"></div>
         <div class="med_area">
-            <div class="phaseArea">
-                <span class="title"><span class="phaseTitle">Phase4</span>Activating</span>
-                <span class="numSelect">
-                    Stage
-                    <?php echo $c1; ?>1
-                    <?php echo $c2; ?>2
+            <div>
+                <div class="fL">Phase4　Activating</div>
+                <div class="fL">
+                    Stage　
+                    <?php echo $c1; ?>1　
+                    <?php echo $c2; ?>2　
                     <?php echo $c3; ?>3
-                </span>
+                </div>
             </div>
 <?php
 for($num; $num <= 10; $num++){
     echo <<< EOT
-            <!-- <div class="fC"></div> -->
+            <div class="fC"></div>
             <div class="section_area">
-                <span class="subject_area">
-                    <span class="section">
-                        <span class="secTitle">
-                            Section&nbsp;
-                        </span>
-                        <span class="secNum">
-                            {$section[$num]}
-                        </span>
-                    </span>
-                </span>
-                <span class="dot">、</span>
-                <span class="data_area">
-                    <span class="gNum">
-                        G
-                        {$g[$num]}
-                    </span>
-                    <span class="eachTime">
-                        {$teach[$num]}
-                    </span>
-                    times each
-                    <span class="vs">
-                    {$s[$num]}S&nbsp;&nbsp;{$vs[$num]}VS&nbsp;
-                    </span>
-                </span>
+                <div class="subject_area">
+                    <div class="fL">Section&nbsp;
+                        {$section[$num]}
+                    </div>
+                </div>
+                <div class="fL">、</div>
+                <div class="subject_area">
+                    G
+                    {$g[$num]}
+                    &nbsp;&nbsp;
+                    {$teach[$num]}
+                    times each　
+                    {$s[$num]}S&nbsp;{$vs[$num]}VS&nbsp;
+                </div>
             </div>
 
 EOT;

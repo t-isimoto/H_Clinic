@@ -22,90 +22,96 @@
     </p>
     <div id="main_box">
         <div class="name_area subject">
-                氏名
-                <span class="namebody"><?php echo $name; ?>
-                </span>
-                様
+            <div class="fL">氏名　<?php echo $name; ?>　様</div>
+            <div class="fC"></div>  
         </div>
         
         <div class="med_area">
-            <div class="diagnosisArea">
-                <h2>
-                    &#x2610;診断結果
-                </h2>
-                <div class="string_area">
-                    <?php echo $diagnosis; ?>
+            <div class="subject">
+                &#x2610;診断結果
+            </div>
+            <div class="string_area">
+                <?php echo $diagnosis; ?>
+            </div>
+        
+            <div class="subject">
+                &#x2610;処方内容
+            </div>
+            <div class="therapy_subject">
+                １．プレセラピー
+            </div>
+            <div class="string_area">
+                <?php echo $pretherapy; ?>
+            </div>
+            
+            <div class="therapy_subject">
+                ２．メインセラピー（コース、アウェイクニング）
+            </div>
+            <div class="sub_area">
+                <div class="fL">
+                    PVPを、
+                </div>
+                <div class="border_under fL">
+                    <?php echo $week_count; ?>
+                    週に
+                    <?php echo $count; ?>
+                    回
+                </div>
+                <div class="fL">
+                    のペースで4回受けます。
                 </div>
             </div>
-            <div class="PrescriptionArea">
-                <h2>
-                    &#x2610;処方内容
-                </h2>            
-                <h3>
-                    １．プレセラピー
-                </h3>
-                <div class="string_area">
-                    <?php echo $pretherapy; ?>
+            <div class="fC"></div>
+            
+            <div class="therapy_subject">
+                ３．ポストセラピー
+            </div>
+            <div class="sub_area">
+                <div class="fL">
+                    コンフォーマーを日に
                 </div>
-                
-                <h3>
-                    ２．メインセラピー（コース、アウェイクニング）
-                </h3>
-                <div class="sub_area">
-                        PVPを、
-                    <div class="border_under">
-                        <?php echo $week_count; ?>
-                        週に
-                        <?php echo $count; ?>
-                        回
-                    </div>
-                        のペースで4回受けます。
+                <div class="border_under fL">
+                    <?php echo $conformer; ?>
+                    回、
                 </div>
-                
-                <h3>
-                    ３．ポストセラピー
-                </h3>
-                <div class="sub_area">
-                        コンフォーマーを日に
-                    <div class="border_under">
-                        <?php echo $conformer; ?>
-                        回、
-                    </div>
-                    <div>
-                        <?php echo $c[1]; ?>朝食前　
-                        <?php echo $c[2]; ?>昼食前　
-                        <?php echo $c[3]; ?>夕食前　
-                        <?php echo $c[4]; ?>朝食後　
-                        <?php echo $c[5]; ?>昼食後　
-                    </div>
-                    <div>
-                        <?php echo $c[6]; ?>夕食後　
-                        <?php echo $c[7]; ?>食間　　
-                        <?php echo $c[8]; ?>就寝前　
-                    </div>
-                    <div>に、
-                        <div class="border_under">
-                            <?php echo $ml; ?>
-                            ml
-                        </div>
-                        ずつ飲みます。
-                    </div>
+                <div class="fC"></div>
+                <div>
+                    <?php echo $c[1]; ?>朝食前　
+                    <?php echo $c[2]; ?>昼食前　
+                    <?php echo $c[3]; ?>夕食前　
+                    <?php echo $c[4]; ?>朝食後　
+                    <?php echo $c[5]; ?>昼食後　
                 </div>
-                
-                <h3>
-                    ４．再診の時期
-                </h3>
-                <div class="sub_area">
+                <div>
+                    <?php echo $c[6]; ?>夕食後　
+                    <?php echo $c[7]; ?>食間　　
+                    <?php echo $c[8]; ?>就寝前　
+                </div>
+                <div class="fL">に、</div>
+                <div class="border_under fL">
+                    <?php echo $ml; ?>
+                    ml
+                </div>
+                <div class="fL">
+                    ずつ飲みます。
+                </div>
+            </div>
+            
+            <div class="therapy_subject fC">
+                ４．再診の時期
+            </div>
+            <div class="sub_area">
+                <div class="fL">
                     次回の診察は、およそ
-                    <div class="border_under">
-                        <?php echo $retry; ?>
-                        ヶ月後
-                    </div>
-                    です。
                 </div>
+                <div class="border_under fL">
+                    <?php echo $retry; ?>
+                    ヶ月後
+                </div>
+                です。
             </div>
         </div>
-    </div> 
+    </div>
     <div class="border_under fR" id="footer_space">
         　　　　年　　月　　日　DR.
     </div>
@@ -134,6 +140,6 @@ EOT;
     }
 ?>
     </form>
-
+</div>
 </body>
 </html>

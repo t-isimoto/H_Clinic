@@ -38,14 +38,7 @@
             <div class="med_area">
                 <div class="contents_box">
                     <div class="subject">
-                        1.Subject
-                    </div>
-                    <textarea name="subject" rows="10" cols="80" class="sub_area"><?php echo $subject;?></textarea>
-                </div>
-                
-                <div class="contents_box">
-                    <div class="subject">
-                        2.Kotoha Reading
+                        1.Kotoha Reading
                     </div>
                     <div class="item">
                         第1層&nbsp;<input type="text" name="kotoha_reading1" value="<?php echo $kotoha1;?>"/>
@@ -106,7 +99,7 @@ EOT;
                         </div>
                         
                         <div>
-                            <div class="href_block">
+                            <div class="half_block">
                                 Sub
                                 <select name="sub">
 <?php
@@ -120,7 +113,7 @@ EOT;
 ?>
                                 </select>
                             </div>
-                            <div class="href_block">
+                            <div class="half_block">
                                 Dhatus
                                 <select name="dhatus">
 <?php
@@ -315,30 +308,30 @@ EOT;
                 </div>
                 <div class="contents_box">
                     <div class="subject">
-                        3. Problem & Purpose
+                        2. Subject、Problem & Purpose
                     </div>
                     <div>
-                        <div class="href_block">#1<input type="text" size="35" name="sharp1" value="<?php echo $sharp1; ?>"></div>
-                        <div class="href_block">#4<input type="text" size="35" name="sharp4" value="<?php echo $sharp4; ?>"></div>
+                        <div class="half_block">#1<input type="text" size="35" name="sharp1" value="<?php echo $sharp1; ?>"></div>
+                        <div class="half_block">#4<input type="text" size="35" name="sharp4" value="<?php echo $sharp4; ?>"></div>
                     </div>
                     <div>
-                        <div class="href_block">#2<input type="text" size="35" name="sharp2" value="<?php echo $sharp2; ?>"></div>
-                        <div class="href_block">#5<input type="text" size="35" name="sharp5" value="<?php echo $sharp5; ?>"></div>
+                        <div class="half_block">#2<input type="text" size="35" name="sharp2" value="<?php echo $sharp2; ?>"></div>
+                        <div class="half_block">#5<input type="text" size="35" name="sharp5" value="<?php echo $sharp5; ?>"></div>
                     </div>
                     <div>
-                        <div class="href_block">#3<input type="text" size="35" name="sharp3" value="<?php echo $sharp3; ?>"></div>
-                        <div class="href_block">#6<input type="text" size="35" name="sharp6" value="<?php echo $sharp6; ?>"></div>
+                        <div class="half_block">#3<input type="text" size="35" name="sharp3" value="<?php echo $sharp3; ?>"></div>
+                        <div class="half_block">#6<input type="text" size="35" name="sharp6" value="<?php echo $sharp6; ?>"></div>
                     </div>
                 </div>
                 <div class="contents_box">
                     <div class="subject">
-                        4. Prescription
+                        3. Prescription
                     </div>
 <?php
     for($i = 1; $i <= 5; $i+=2){
         $j = $i+1;
         echo <<< EOT
-                    <div class="href_block">
+                    <div class="half_block">
                         <div class="border_under">
                             G <input type="text" size="1" name="g{$i}" value="{$g[$i]}">,
                             Set <input type="text" size="1" name="set{$i}" value="{$set[$i]}">,
@@ -349,7 +342,7 @@ EOT;
                             <input type="hidden" name="h_vs{$i}" id="h_vs{$i}" value="{$vs[$i]}">
                         </div>
                     </div>
-                    <div class="href_block mL5">
+                    <div class="half_block mL5">
                         <div class="border_under">
                             G <input type="text" size="1" name="g{$j}" value="{$g[$j]}">,
                             Set <input type="text" size="1" name="set{$j}" value="{$set[$j]}">,
@@ -367,7 +360,7 @@ EOT;
     for($i = 7; $i <= 13; $i+=2){
         $j = $i+1;
         echo <<< EOT
-                    <div class="href_block">
+                    <div class="half_block">
                         <div class="border_under">
                             <div class="non_set_area">G <input type="text" size="1" name="g{$i}" value="{$g[$i]}"></div>,
                             <div class="select_item {$s_class[$i]}" style="width: 20px;" id="s{$i}" onclick="circle('s{$i}'); return false;">S</div>
@@ -377,7 +370,7 @@ EOT;
                             <input type="hidden" name="h_vs{$i}" id="h_vs{$i}" value="{$vs[$i]}">
                         </div>
                     </div>
-                    <div class="href_block mL5">
+                    <div class="half_block mL5">
                         <div class="border_under">
                             <div class="non_set_area">G <input type="text" size="1" name="g{$j}" value="{$g[$j]}"></div>,
                             <div class="select_item {$s_class[$j]}" style="width: 25px;" id="s{$j}" onclick="circle('s{$j}'); return false;">S</div>

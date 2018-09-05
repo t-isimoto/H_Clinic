@@ -35,14 +35,7 @@
         <div class="med_area">
             <div class="contents_box">
                 <div class="subject">
-                    1.Subject
-                </div>
-                <?php echo $subject; ?>
-            </div>
-            
-            <div class="contents_box">
-                <div class="subject">
-                    2.Kotoha Reading
+                    1.Kotoha Reading
                 </div>
                 <div class="item">
                     第1層&nbsp;<?php echo $kotoha1;?>
@@ -78,10 +71,10 @@
                     </div>
                     
                     <div>
-                        <div class="href_block">
+                        <div class="half_block">
                             Sub　<?php echo $arr_sub[$sub-1]; ?>
                         </div>
-                        <div class="href_block">
+                        <div class="half_block">
                             Dhatus　<?php echo $arr_dhatus[$dhatus -1]; ?>
                         </div>
                     </div>
@@ -221,30 +214,30 @@
             </div>
             <div class="contents_box">
                 <div class="subject">
-                    3.Problem & Purpose
+                    2. Subject、Problem & Purpose
                 </div>
                 <div>
-                    <div class="href_block">#1<?php echo $sharp1; ?></div>
-                    <div class="href_block">#4<?php echo $sharp4; ?></div>
+                    <div class="half_block">#1<?php echo $sharp1; ?></div>
+                    <div class="half_block">#4<?php echo $sharp4; ?></div>
                 </div>
                 <div>
-                    <div class="href_block">#2<?php echo $sharp2; ?></div>
-                    <div class="href_block">#5<?php echo $sharp5; ?></div>
+                    <div class="half_block">#2<?php echo $sharp2; ?></div>
+                    <div class="half_block">#5<?php echo $sharp5; ?></div>
                 </div>
                 <div>
-                    <div class="href_block">#3<?php echo $sharp3; ?></div>
-                    <div class="href_block">#6<?php echo $sharp6; ?></div>
+                    <div class="half_block">#3<?php echo $sharp3; ?></div>
+                    <div class="half_block">#6<?php echo $sharp6; ?></div>
                 </div>
             </div>
             <div class="contents_box">
                 <div class="subject">
-                    4. Prescription
+                    3. Prescription
                 </div>
 <?php
     for($i = 1; $i <= 5; $i+=2){
         $j = $i+1;
         echo <<< EOT
-                <div class="href_block">
+                <div class="half_block">
                     <div class="border_under">
                         G {$g[$i]}
                         Set {$set[$i]},
@@ -253,7 +246,7 @@
                         {$time[$i]}times
                     </div>
                 </div>
-                <div class="href_block mL5">
+                <div class="half_block mL5">
                     <div class="border_under">
                         G {$g[$j]}
                         Set {$set[$j]},
@@ -269,7 +262,7 @@ EOT;
     for($i = 7; $i <= 13; $i+=2){
         $j = $i+1;
         echo <<< EOT
-                <div class="href_block">
+                <div class="half_block">
                     <div class="border_under">
                         <div class="non_set_area">G {$g[$i]}</div>,
                         <div class="select_item {$s_class[$i]}" style="width: 20px;" id="s{$i}">S</div>
@@ -277,7 +270,7 @@ EOT;
                         {$time[$i]}times
                     </div>
                 </div>
-                <div class="href_block mL5">
+                <div class="half_block mL5">
                     <div class="border_under">
                         <div class="non_set_area">G {$g[$j]}</div>,
                         <div class="select_item {$s_class[$j]}" style="width: 20px;" id="s{$j}">S</div>
@@ -300,7 +293,6 @@ EOT;
     
     <form method="post" action="input.php" name="form1">
         <input type="hidden" name="name" value="<?php echo $name; ?>" />
-        <input type="hidden" name="subject" value="<?php echo $subject; ?>" />
         <input type="hidden" name="kotoha_reading1" value="<?php echo $kotoha1; ?>" />
         <input type="hidden" name="kotoha_reading2" value="<?php echo $kotoha2; ?>" />
         <input type="hidden" name="kotoha_reading3" value="<?php echo $kotoha3; ?>" />

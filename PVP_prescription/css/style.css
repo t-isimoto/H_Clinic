@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 .name_area{
 	width:90%;
 	margin: 10px 0 0 10px;
@@ -8,16 +7,14 @@
 
 .med_area{
 	width:100%;
-	margin-left:1%;
+	margin-left:5%;
 	margin-top: 40px;
 }
 
 .sub_area{
 	margin-left: 1em;
 }
-div.sub_area{	
-	font-size: 18px;
-}
+
 .subject, .therapy_subject{
 	font-weight: bold;
 }
@@ -36,16 +33,4 @@ div.sub_area{
 .string_area{
 	width: 90%;
 	font-size:18px;
-	min-height: 160px;
-}
-h2{
-	font-size: 20px;
-}
-h3{
-	font-size: 18px;
-	margin-bottom: 0px;
-}
-
-div.border_under{
-	display:inline-block;
 }
