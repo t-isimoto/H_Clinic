@@ -11,6 +11,8 @@
     
     <link href="../css/common.css" rel="stylesheet" media="screen,print" />
     <link href="./css/style.css" rel="stylesheet" media="screen,print" />
+
+    <script type="text/javascript" src="../js/brain.js"></script>
 </head>
 <body>
 <div id="contents">
@@ -36,8 +38,11 @@
                     1. 脳の体質（強さと優位性）と機能状態（活性度）
                 </div>
                 
-                <div class="half_block fL">
-                    <img src="../img/brain.png" width="350" height="235" />
+                <div class="half_block fL" id="brain">
+                    <img onclick="brain('zentouyou'); return false;" src="../img/zentouyou.png" id="zentouyou" width="147" height="161" />
+                    <img onclick="brain('toutyouyou'); return false;" src="../img/toutyouyou.png" id="toutyouyou" width="140" height="120" />
+                    <img onclick="brain('koutouyou'); return false;" src="../img/koutouyou.png" id="koutouyou" width="65" height="94" />
+                    <img onclick="brain('sokutouyou'); return false;" src="../img/sokutouyou.png" id="sokutouyou" width="143" height="116" />
                 </div>
                 <div class="half_block fR">
                     <div class="subject">

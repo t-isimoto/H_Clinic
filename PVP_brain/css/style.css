@@ -51,3 +51,43 @@ table{
 td{
 	text-align: center;
 }
+
+#brain{
+	position: relative;
+	width: 350px;
+	height: 235px;
+	background:url(../../img/brain.png);
+	background-size: cover;
+}
+
+#zentouyou{
+	position: absolute;
+	top: 18px;
+	left: 25px;
+	filter: grayscale(0%);
+	/*display : none;*/
+}
+
+#toutyouyou{
+	position: absolute;
+	top: 13px;
+	left: 125px;
+	filter: grayscale(0%);
+	/*display : none;*/
+}
+
+#koutouyou{
+	position: absolute;
+	top: 84px;
+	left: 229px;
+	filter: grayscale(0%);
+	/*display : none;*/
+}
+
+#sokutouyou{
+	position: absolute;
+	top: 93px;
+	left: 92px;
+	filter: grayscale(0%);
+	/*display : none;*/
+}
