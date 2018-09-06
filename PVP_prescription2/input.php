@@ -38,7 +38,14 @@
             <div class="med_area">
                 <div class="contents_box">
                     <div class="subject">
-                        1.Kotoha Reading
+                        1.Subject
+                    </div>
+                    <textarea name="subject" rows="10" cols="80" class="sub_area"><?php echo $subject;?></textarea>
+                </div>
+                
+                <div class="contents_box">
+                    <div class="subject">
+                        2.Kotoha Reading
                     </div>
                     <div class="item">
                         第1層&nbsp;<input type="text" name="kotoha_reading1" value="<?php echo $kotoha1;?>"/>
@@ -308,7 +315,7 @@ EOT;
                 </div>
                 <div class="contents_box">
                     <div class="subject">
-                        2. Subject、Problem & Purpose
+                        3. Problem & Purpose
                     </div>
                     <div>
                         <div class="half_block">#1<input type="text" size="35" name="sharp1" value="<?php echo $sharp1; ?>"></div>
@@ -325,7 +332,7 @@ EOT;
                 </div>
                 <div class="contents_box">
                     <div class="subject">
-                        3. Prescription
+                        4. Prescription
                     </div>
 <?php
     for($i = 1; $i <= 5; $i+=2){

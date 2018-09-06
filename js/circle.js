@@ -3,6 +3,14 @@ function circle(tag){
     var h_element = document.getElementById('h_'+tag);
     
     element.classList.toggle('circle');
+
+    if(tag.match(/^vs\d*/)){
+        var remove_ele = document.getElementById(tag.match(/s[0-9]*/));
+        remove_ele.classList.remove('circle');
+    }else if(tag.match(/^s\d*/)){
+        var remove_ele = document.getElementById("v"+tag.match(/s[0-9]*/));
+        remove_ele.classList.remove('circle');
+    }
     
     var val = h_element.value;
     

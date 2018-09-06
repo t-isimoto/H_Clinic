@@ -35,7 +35,14 @@
         <div class="med_area">
             <div class="contents_box">
                 <div class="subject">
-                    1.Kotoha Reading
+                    1.Subject
+                </div>
+                <?php echo $subject; ?>
+            </div>
+            
+            <div class="contents_box">
+                <div class="subject">
+                    2.Kotoha Reading
                 </div>
                 <div class="item">
                     第1層&nbsp;<?php echo $kotoha1;?>
@@ -214,7 +221,7 @@
             </div>
             <div class="contents_box">
                 <div class="subject">
-                    2. Subject、Problem & Purpose
+                    3.Problem & Purpose
                 </div>
                 <div>
                     <div class="half_block">#1<?php echo $sharp1; ?></div>
@@ -231,7 +238,7 @@
             </div>
             <div class="contents_box">
                 <div class="subject">
-                    3. Prescription
+                    4. Prescription
                 </div>
 <?php
     for($i = 1; $i <= 5; $i+=2){
@@ -293,6 +300,7 @@ EOT;
     
     <form method="post" action="input.php" name="form1">
         <input type="hidden" name="name" value="<?php echo $name; ?>" />
+        <input type="hidden" name="subject" value="<?php echo $subject; ?>" />
         <input type="hidden" name="kotoha_reading1" value="<?php echo $kotoha1; ?>" />
         <input type="hidden" name="kotoha_reading2" value="<?php echo $kotoha2; ?>" />
         <input type="hidden" name="kotoha_reading3" value="<?php echo $kotoha3; ?>" />
